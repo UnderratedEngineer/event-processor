@@ -1,0 +1,12 @@
+Namespace: MAIN
+KafkaConsumer:
+  Broker: localhost:9090
+  Protocol: PLAINTEXT
+  Mechanisms: PLAIN
+  AutoOffsetReset: earliest
+  ConsumerGroup: event_processor
+  SessionTimeout: 30000
+  Topics: [gcp_event]
+  FetchMinBytes: 1
+  PollTimeout: 3000
+  EnableAutoCommit: true
