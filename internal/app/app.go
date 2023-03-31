@@ -8,7 +8,7 @@ import (
 	"github.com/UnderratedEngineer/event-processor/internal/models"
 )
 
-func Start(test *main.KafkaConsumerImpl) {
+func Start() {
 
 	log.Println("Starting the alert event service !!")
 
@@ -23,7 +23,7 @@ func Start(test *main.KafkaConsumerImpl) {
 
 	alertCommonUtils := &models.EventCommonUtils{
 		KafkaCommonUtil: &models.KafkaCommonUtils{
-			ConsumerImpl: main.Test,
+			//ConsumerImpl: main.Test,
 		},
 	}
 	fmt.Println(alertCommonUtils)
