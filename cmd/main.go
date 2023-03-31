@@ -18,5 +18,5 @@ func Init() {
 }
 func main() {
 
-	app.Start(Test)
+	app.Start()
 }
