@@ -21,10 +21,10 @@ func Start() {
 		log.Println(appconfig)
 	}
 
-	alertCommonUtils := &models.EventCommonUtils{
+	eventCommonUtils := &models.EventCommonUtils{
 		KafkaCommonUtil: &models.KafkaCommonUtils{
 			//ConsumerImpl: main.Test,
 		},
 	}
-	fmt.Println(alertCommonUtils)
+	fmt.Println(eventCommonUtils)
 }
